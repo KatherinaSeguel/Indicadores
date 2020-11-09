@@ -14,4 +14,16 @@ interface IndicadoresApi {
     //Coroutines
     @GET("/api")
     suspend fun fetchAllIndicadoresWithCoroutines(): Response<List<Indicadores>>
+
+
+
+    @GET("/api/{tipo_indicador}")
+    suspend fun fetchPorTipoCorutinas(): Response<Indicadores>
+
+    @GET("/api/{tipo_indicador}")
+    fun fetchPorTipoList(TipoIndicador: String): Call<Indicadores>
+
+
+
+
 }
