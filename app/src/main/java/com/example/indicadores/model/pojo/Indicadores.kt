@@ -4,6 +4,7 @@ package com.example.indicadores.model.pojo
 import com.google.gson.annotations.SerializedName
 
 data class Indicadores(
+        val id:Int,
     @SerializedName("autor")
     val autor: String,
     @SerializedName("bitcoin")
