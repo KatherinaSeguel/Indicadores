@@ -8,7 +8,7 @@ import com.example.indicadores.model.local.Dao.DaoIndicadores
 
 private const val DATA_BESE_NAME= "Indicadores_db"
 
-@Database(entities=[EntityIndicadores::class], version=1 )
+@Database(entities=[MaestraEntity::class], version=1 )
 abstract class DataBaseIndicador : RoomDatabase(){
 
     //Método para Dao

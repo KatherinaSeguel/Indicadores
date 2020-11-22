@@ -5,7 +5,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import com.example.indicadores.Repository
 import com.example.indicadores.model.local.DataBaseIndicador
-import com.example.indicadores.model.local.EntityIndicadores
 import com.example.indicadores.model.local.MaestraEntity
 
 class IndicaViewModel (application: Application) : AndroidViewModel(application) { //sólo se hereda de la clase ViewModel sin contexto porque no es ROOM(androidViewmodel)
@@ -31,7 +30,7 @@ class IndicaViewModel (application: Application) : AndroidViewModel(application)
     //no lo había hecho
 //segundo fragmanto
     //Este elemento será observado por la vista cuando le pase el Id
-    fun getOneIndicadorresByID(id: String): LiveData<MaestraEntity> {
-        return mRepository.getOneIndicaByID(id)
-    }
+   /* fun getOneIndicadorresByID(id: String): LiveData<MaestraEntity> {
+        return mRepository.getDataFromServer(id)
+    }*/
 }

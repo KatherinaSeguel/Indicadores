@@ -15,7 +15,7 @@ import retrofit2.Response
 
 class Repository (private val indicaDao: DaoIndicadores) {
     private val service = RetrofitClient.getRetrofitClient()
-    val mLiveData = indicaDao.getOneIndicadorByID(mid = Int)
+    val mLiveData = indicaDao.getOneIndicadorByID(mid=0)
     val mLiveDataPri=indicaDao.getAllIndicadores()
 
     //La vieja confiable
@@ -81,9 +81,10 @@ class Repository (private val indicaDao: DaoIndicadores) {
     //esto tampoco lo había hecho
     //segundo fragmanto
     //Este elemento será observado por la vista cuando le pase el Id
-   /* fun getOneIndicaByID(id:Int): LiveData<MaestraEntity> {
+
+   fun getOneIndicaByID(id:Int): LiveData<MaestraEntity> {
         return  indicaDao.getOneIndicadorByID(id)
 
-    }*/
+    }
 
 }

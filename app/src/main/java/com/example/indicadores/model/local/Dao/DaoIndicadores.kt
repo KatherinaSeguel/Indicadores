@@ -11,8 +11,7 @@ import com.example.indicadores.model.local.MaestraEntity
 interface DaoIndicadores {
     //inserta todos datos
 
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE )
+  @Insert(onConflict = OnConflictStrategy.REPLACE )
   fun insertAllIndicador(mList: List<MaestraEntity>)
 
 

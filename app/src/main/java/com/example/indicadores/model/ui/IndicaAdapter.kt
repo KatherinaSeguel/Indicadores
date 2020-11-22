@@ -15,9 +15,9 @@ class IndicaAdapter  (var mPasstheData:PasstheData): RecyclerView.Adapter<Indica
 
     //cada vez que haya un cambio actualiza la lista
 
-    fun updateFrutos(mStringList: List<MaestraEntity>) {  //paso 2
+    fun updateFrutos(mStringList: MaestraEntity) {  //paso 2
 
-        mData = mStringList        //paso 2
+        mData = listOf(mStringList)        //paso 2
         notifyDataSetChanged()
     }
 
